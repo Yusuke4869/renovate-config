@@ -7,7 +7,7 @@
     "format:check": "prettier --ignore-path .gitignore --check --ignore-unknown ."
   },
   "engines": {
-    "node": "18.12.1",
+    "node": "18.15.0",
     "npm": "Please use yarn instead"
   },
   "devDependencies": {
