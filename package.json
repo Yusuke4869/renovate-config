@@ -6,7 +6,7 @@
     "format": "prettier --ignore-path .gitignore --write --ignore-unknown .",
     "format:check": "prettier --ignore-path .gitignore --check --ignore-unknown ."
   },
-  "packageManager": "yarn@3.6.3",
+  "packageManager": "yarn@3.6.4",
   "volta": {
     "node": "18.18.0"
   },
