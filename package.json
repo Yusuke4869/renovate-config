@@ -11,6 +11,6 @@
     "node": "18.18.2"
   },
   "devDependencies": {
-    "prettier": "^2.7.1"
+    "prettier": "^3.0.0"
   }
 }
