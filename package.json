@@ -3,8 +3,8 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "format": "prettier --ignore-path .gitignore --write --ignore-unknown .",
-    "format:check": "prettier --ignore-path .gitignore --check --ignore-unknown ."
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "packageManager": "yarn@4.4.0",
   "volta": {
