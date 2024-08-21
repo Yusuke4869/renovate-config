@@ -1,3 +1,3 @@
-# renovate-config
+# Renovate Config
 
-This is my renovate config.
+My Renovate Configuration
