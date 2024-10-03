@@ -1,5 +1,12 @@
 {
-  "extends": ["config:base", "config:recommended", ":prHourlyLimitNone", ":timezone(Asia/Tokyo)"],
+  "extends": [
+    "config:base",
+    "config:recommended",
+    ":semanticCommits",
+    ":semanticCommitTypeAll(chore)",
+    ":prHourlyLimitNone",
+    ":timezone(Asia/Tokyo)"
+  ],
   "labels": ["dependencies", "renovate"],
   "dependencyDashboard": true,
   "automergeStrategy": "squash",
