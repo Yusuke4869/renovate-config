@@ -1,29 +1,21 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base",
     "config:recommended",
     ":semanticCommits",
     ":semanticCommitTypeAll(chore)",
-    ":prHourlyLimitNone",
+    ":disableRateLimiting",
     ":timezone(Asia/Tokyo)"
   ],
   "labels": ["dependencies", "renovate"],
-  "dependencyDashboard": true,
+  "osvVulnerabilityAlerts": true,
   "automergeStrategy": "squash",
+  "dependencyDashboard": true,
   "branchConcurrentLimit": 0,
-  "prHourlyLimit": 0,
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch"],
       "automerge": true
-    },
-    {
-      "groupName": "types",
-      "packagePatterns": ["^@types/"],
-      "automerge": true,
-      "major": {
-        "automerge": false
-      }
     }
   ]
 }
