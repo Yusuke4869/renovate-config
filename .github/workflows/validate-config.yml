@@ -1,5 +1,9 @@
 name: Validate Renovate Config
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
 
 jobs:
   validate:
@@ -9,10 +13,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
       - name: Setup Node.js Environment
-        uses: actions/setup-node@main
+        uses: actions/setup-node@v6
         with:
           node-version-file: package.json
 
       - name: Validate Renovate Config
-        run: RENOVATE_CONFIG_FILE=default.json npx --yes --package renovate -- renovate-config-validator --strict
+        run: pnpm validate
