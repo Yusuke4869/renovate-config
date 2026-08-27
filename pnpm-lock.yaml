@@ -13,7 +13,7 @@ importers:
         version: 3.9.6
       renovate:
         specifier: ^44.0.0
-        version: 44.39.3(supports-color@7.2.0)(typanion@3.14.0)
+        version: 44.41.1(supports-color@7.2.0)(typanion@3.14.0)
 
 packages:
 
@@ -1779,8 +1779,8 @@ packages:
     resolution: {integrity: sha512-V7+vQEJ06Z+c5tSye8S+nHUfI51xoXIXjHQ99cQtKUkQqqO1kO/KCJUfZXuB47h/YBlDhah2H3hdUGXn8ie0oA==}
     engines: {node: '>=8.6'}
 
-  picomatch@4.0.5:
-    resolution: {integrity: sha512-RvwwcruNjI1ncT5xRakeyS9Lf8lcItv34KD+aif+VH9kduAyfYBipGh12274xtenIPZ119/R9BdTBa8gAwSh0A==}
+  picomatch@4.0.7:
+    resolution: {integrity: sha512-qcJu88Q2IWqJsDD529JKMdwGm/dvInW4HvQnRwiH9JtihJvzGOscDtHE3x1pBKeUOTysQ8kVmLnJ2kJu7yhcGA==}
     engines: {node: '>=12'}
 
   prettier@3.8.1:
@@ -1849,8 +1849,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@44.39.3:
-    resolution: {integrity: sha512-RSa6m3V+5efXvt7fcWRtggJaaSuT7q7j08vsmo2i3uHwPIZpzr411xFhlR/I67TJ4BnbcjgfhW09qNfgcYRDkw==}
+  renovate@44.41.1:
+    resolution: {integrity: sha512-nHD/3zTEvvVKV3GWc2GaAH1ksFnXV4Ekjm09bb9C/9UfqqQNbiTFI1gnWP6OyKfZ0KoWsO3QN6Srk4+jEX17kA==}
     engines: {node: ^24.11.0, pnpm: ^11.0.0}
     hasBin: true
 
@@ -3400,9 +3400,9 @@ snapshots:
     dependencies:
       reusify: 1.1.0
 
-  fdir@6.5.0(picomatch@4.0.5):
+  fdir@6.5.0(picomatch@4.0.7):
     optionalDependencies:
-      picomatch: 4.0.5
+      picomatch: 4.0.7
     optional: true
 
   fetch-blob@3.2.0:
@@ -4383,7 +4383,7 @@ snapshots:
 
   picomatch@2.3.2: {}
 
-  picomatch@4.0.5:
+  picomatch@4.0.7:
     optional: true
 
   prettier@3.8.1: {}
@@ -4473,7 +4473,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@44.39.3(supports-color@7.2.0)(typanion@3.14.0):
+  renovate@44.41.1(supports-color@7.2.0)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.1095.0
       '@aws-sdk/client-ec2': 3.1095.0
@@ -4782,8 +4782,8 @@ snapshots:
 
   tinyglobby@0.2.17:
     dependencies:
-      fdir: 6.5.0(picomatch@4.0.5)
-      picomatch: 4.0.5
+      fdir: 6.5.0(picomatch@4.0.7)
+      picomatch: 4.0.7
     optional: true
 
   tinylogic@2.0.0: {}
